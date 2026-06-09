@@ -1,0 +1,36 @@
+{
+    "title": "LinkedIn Post Search Scout input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "liAtCookie": {
+            "title": "li_at session cookie",
+            "type": "string",
+            "description": "Your LinkedIn 'li_at' cookie value. WARNING: using it for automation violates LinkedIn ToS and may get your account restricted. You assume the risk.",
+            "editor": "textfield",
+            "isSecret": true
+        },
+        "keywords": {
+            "title": "Keywords",
+            "type": "string",
+            "description": "Search keywords for posts (e.g. 'wish there was a tool for').",
+            "editor": "textfield",
+            "prefill": "i wish there was a tool"
+        },
+        "maxResults": {
+            "title": "Max posts",
+            "type": "integer",
+            "description": "Maximum posts to return.",
+            "default": 25,
+            "minimum": 1,
+            "maximum": 100
+        },
+        "useProxy": {
+            "title": "Use Apify residential proxy",
+            "type": "boolean",
+            "description": "Recommended to reduce blocks. Uses residential credit.",
+            "default": true
+        }
+    },
+    "required": ["keywords"]
+}

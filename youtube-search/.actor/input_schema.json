@@ -1,0 +1,29 @@
+{
+    "title": "YouTube Search Scout input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "searchQueries": {
+            "title": "Search queries",
+            "type": "array",
+            "description": "YouTube search terms (e.g. 'I built an app and made $').",
+            "editor": "stringList",
+            "prefill": ["build in public saas"]
+        },
+        "maxResults": {
+            "title": "Max results per query",
+            "type": "integer",
+            "description": "Max videos to return per query.",
+            "default": 30,
+            "minimum": 1,
+            "maximum": 200
+        },
+        "useProxy": {
+            "title": "Use Apify Proxy",
+            "type": "boolean",
+            "description": "Route through Apify Proxy (datacenter). Uses credit. Helps avoid consent walls.",
+            "default": true
+        }
+    },
+    "required": ["searchQueries"]
+}

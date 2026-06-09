@@ -1,0 +1,10 @@
+{
+    "name": "appstore-localization-gaps",
+    "version": "0.0.1",
+    "type": "module",
+    "description": "Find US App Store apps missing DE/FR/ES localization + reviews requesting translation.",
+    "engines": { "node": ">=18" },
+    "dependencies": { "apify": "^3.2.6" },
+    "scripts": { "start": "node src/main.js" },
+    "license": "ISC"
+}

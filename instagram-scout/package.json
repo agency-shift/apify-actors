@@ -1,0 +1,10 @@
+{
+    "name": "instagram-scout",
+    "version": "0.0.1",
+    "type": "module",
+    "description": "Scrape public Instagram profiles and recent posts.",
+    "engines": { "node": ">=18" },
+    "dependencies": { "apify": "^3.2.6", "undici": "^6.19.8" },
+    "scripts": { "start": "node src/main.js" },
+    "license": "ISC"
+}

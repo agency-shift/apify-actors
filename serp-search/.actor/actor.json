@@ -1,0 +1,11 @@
+{
+    "actorSpecification": 1,
+    "name": "serp-search-scout",
+    "title": "SERP Search Scout — Who Ranks & Competitor Density",
+    "description": "Run search queries and extract organic results (title, url, snippet, position). Defaults to DuckDuckGo (reliable); optional Google via residential proxy. For competitor density & commercial intent.",
+    "version": "0.0",
+    "buildTag": "latest",
+    "meta": { "templateId": "js-empty" },
+    "input": "./input_schema.json",
+    "dockerfile": "./Dockerfile"
+}

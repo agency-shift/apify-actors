@@ -1,0 +1,43 @@
+{
+    "title": "Google Trends Scout input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "mode": {
+            "title": "Mode",
+            "type": "string",
+            "description": "interest = interest-over-time for keywords; daily = trending searches by geo.",
+            "enum": ["interest", "daily"],
+            "enumTitles": ["Interest over time", "Daily trending"],
+            "default": "interest"
+        },
+        "keywords": {
+            "title": "Keywords",
+            "type": "array",
+            "description": "Search terms to measure (interest mode).",
+            "editor": "stringList",
+            "prefill": ["ai agents"]
+        },
+        "geo": {
+            "title": "Geo (ISO country)",
+            "type": "string",
+            "description": "Country code (US, DE, FR, GB, BR...). Empty = worldwide.",
+            "editor": "textfield",
+            "prefill": "US"
+        },
+        "timeframe": {
+            "title": "Timeframe",
+            "type": "string",
+            "description": "e.g. 'today 12-m', 'today 3-m', 'now 7-d'. interest mode only.",
+            "editor": "textfield",
+            "default": "today 12-m"
+        },
+        "useProxy": {
+            "title": "Use Apify Proxy",
+            "type": "boolean",
+            "description": "Route through Apify Proxy (recommended — Google often blocks datacenter IPs). Uses credit.",
+            "default": true
+        }
+    },
+    "required": ["mode"]
+}

@@ -1,0 +1,43 @@
+{
+    "title": "TikTok Scout input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "hashtags": {
+            "title": "Hashtags",
+            "type": "array",
+            "description": "Hashtags without # (e.g. 'buildinpublic').",
+            "editor": "stringList",
+            "prefill": ["buildinpublic"]
+        },
+        "profiles": {
+            "title": "Profiles",
+            "type": "array",
+            "description": "Usernames without @ (e.g. 'nategold.ai').",
+            "editor": "stringList",
+            "default": []
+        },
+        "maxItems": {
+            "title": "Max items per target",
+            "type": "integer",
+            "description": "Maximum videos to extract per hashtag/profile.",
+            "default": 20,
+            "minimum": 1,
+            "maximum": 200
+        },
+        "cookies": {
+            "title": "TikTok cookies (optional)",
+            "type": "string",
+            "description": "Cookie string from a logged-in TikTok session (e.g. 'sessionid=...; msToken=...'). Greatly improves success vs. anonymous, but TikTok still detects automation over time. Ban risk on the account.",
+            "editor": "textfield",
+            "isSecret": true
+        },
+        "useProxy": {
+            "title": "Use Apify residential proxy",
+            "type": "boolean",
+            "description": "Strongly recommended — TikTok blocks datacenter IPs. Uses residential credit.",
+            "default": true
+        }
+    },
+    "required": []
+}

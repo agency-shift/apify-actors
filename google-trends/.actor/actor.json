@@ -1,0 +1,11 @@
+{
+    "actorSpecification": 1,
+    "name": "google-trends-scout",
+    "title": "Google Trends Scout — Demand & Interest Over Time",
+    "description": "Interest-over-time for keywords plus daily trending searches by geo. Useful to validate rising demand for a niche/market. Unofficial Google Trends endpoints.",
+    "version": "0.0",
+    "buildTag": "latest",
+    "meta": { "templateId": "js-empty" },
+    "input": "./input_schema.json",
+    "dockerfile": "./Dockerfile"
+}

@@ -1,0 +1,37 @@
+{
+    "title": "Keyword Ideas Scout input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "seeds": {
+            "title": "Seed keywords",
+            "type": "array",
+            "description": "Base keywords to expand (e.g. 'invoicing app').",
+            "editor": "stringList",
+            "prefill": ["invoicing app"]
+        },
+        "language": {
+            "title": "Language (hl)",
+            "type": "string",
+            "description": "Autocomplete language code (en, de, fr, es, pt).",
+            "editor": "textfield",
+            "default": "en"
+        },
+        "country": {
+            "title": "Country (gl)",
+            "type": "string",
+            "description": "Country code for localized suggestions (us, de, fr, gb).",
+            "editor": "textfield",
+            "default": "us"
+        },
+        "expansions": {
+            "title": "Expansion sets",
+            "type": "array",
+            "description": "Which modifier sets to apply.",
+            "editor": "select",
+            "items": { "type": "string", "enum": ["alphabet", "questions", "prepositions"] },
+            "default": ["alphabet", "questions"]
+        }
+    },
+    "required": ["seeds"]
+}

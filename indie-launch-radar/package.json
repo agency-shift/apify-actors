@@ -1,0 +1,16 @@
+{
+    "name": "indie-launch-radar",
+    "version": "0.0.1",
+    "type": "module",
+    "description": "Show HN early-traction scanner — finds indie SaaS launches gaining organic traction.",
+    "engines": {
+        "node": ">=18"
+    },
+    "dependencies": {
+        "apify": "^3.2.6"
+    },
+    "scripts": {
+        "start": "node src/main.js"
+    },
+    "license": "ISC"
+}

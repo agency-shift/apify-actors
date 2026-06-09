@@ -1,0 +1,43 @@
+{
+    "title": "Instagram Scout input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "usernames": {
+            "title": "Usernames",
+            "type": "array",
+            "description": "Public Instagram usernames without @ (e.g. 'natgeo').",
+            "editor": "stringList",
+            "prefill": ["natgeo"]
+        },
+        "sessionId": {
+            "title": "Instagram sessionid cookie (optional)",
+            "type": "string",
+            "description": "Your IG 'sessionid' cookie. Without it, anonymous requests get rate-limited (HTTP 429). WARNING: using your account for scraping risks a ban. Use at your own risk.",
+            "editor": "textfield",
+            "isSecret": true
+        },
+        "cookies": {
+            "title": "Full IG cookie string (optional, best)",
+            "type": "string",
+            "description": "Paste the whole cookie string (csrftoken=...; sessionid=...; ds_user_id=...; mid=...; ig_did=...). More reliable than sessionid alone — the csrftoken is needed as a header. WARNING: ban risk.",
+            "editor": "textfield",
+            "isSecret": true
+        },
+        "maxPosts": {
+            "title": "Max recent posts per profile",
+            "type": "integer",
+            "description": "How many recent posts to extract per profile (up to ~12 from the public endpoint).",
+            "default": 12,
+            "minimum": 0,
+            "maximum": 50
+        },
+        "useProxy": {
+            "title": "Use Apify residential proxy",
+            "type": "boolean",
+            "description": "Recommended — Instagram rate-limits datacenter IPs. Uses residential credit.",
+            "default": true
+        }
+    },
+    "required": ["usernames"]
+}

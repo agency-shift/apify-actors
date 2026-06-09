@@ -1,0 +1,16 @@
+{
+    "actorSpecification": 1,
+    "name": "indie-launch-radar",
+    "title": "Indie Launch Radar — Show HN Early-Traction Scanner",
+    "description": "Finds early-stage SaaS & indie products gaining organic traction on Hacker News (Show HN), scored by upvote/comment velocity. No proxy, no auth.",
+    "version": "0.0",
+    "buildTag": "latest",
+    "meta": {
+        "templateId": "js-empty"
+    },
+    "input": "./input_schema.json",
+    "dockerfile": "./Dockerfile",
+    "storages": {
+        "dataset": "./dataset_schema.json"
+    }
+}

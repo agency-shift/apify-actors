@@ -1,0 +1,11 @@
+{
+    "actorSpecification": 1,
+    "name": "instagram-scout",
+    "title": "Instagram Scout — Public Profiles & Recent Posts",
+    "description": "Scrape public Instagram profiles: bio, followers, and recent posts (caption, likes, comments, url) via the web_profile_info endpoint. No login for public profiles; hashtags need a session cookie.",
+    "version": "0.0",
+    "buildTag": "latest",
+    "meta": { "templateId": "js-empty" },
+    "input": "./input_schema.json",
+    "dockerfile": "./Dockerfile"
+}

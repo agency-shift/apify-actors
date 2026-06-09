@@ -1,0 +1,11 @@
+{
+    "actorSpecification": 1,
+    "name": "meta-ad-library-scout",
+    "title": "Meta Ad Library Scout — Who's Advertising",
+    "description": "Query the official Meta Ad Library (Graph API ads_archive) by keyword/page and country. See active ads, advertisers, copy and reach. EU shows all ads (DSA); elsewhere political/issue ads.",
+    "version": "0.0",
+    "buildTag": "latest",
+    "meta": { "templateId": "js-empty" },
+    "input": "./input_schema.json",
+    "dockerfile": "./Dockerfile"
+}

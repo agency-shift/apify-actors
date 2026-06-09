@@ -1,0 +1,11 @@
+{
+    "actorSpecification": 1,
+    "name": "youtube-search-scout",
+    "title": "YouTube Search Scout — Builder & Demand Signals",
+    "description": "Search YouTube and extract videos (title, channel, views, length, age, url) for a query. Find builder case studies and niche demand. Parses ytInitialData, no API key needed.",
+    "version": "0.0",
+    "buildTag": "latest",
+    "meta": { "templateId": "js-empty" },
+    "input": "./input_schema.json",
+    "dockerfile": "./Dockerfile"
+}

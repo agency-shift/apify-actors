@@ -1,0 +1,44 @@
+{
+    "title": "Meta Ad Library Scout input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "accessToken": {
+            "title": "Meta access token",
+            "type": "string",
+            "description": "A Meta (Graph API) access token. Get a free one at developers.facebook.com (any app + user token). Required by Meta to query the Ad Library.",
+            "editor": "textfield",
+            "isSecret": true
+        },
+        "searchTerms": {
+            "title": "Search terms",
+            "type": "string",
+            "description": "Keyword(s) to search ads for (e.g. 'meal plan app').",
+            "editor": "textfield",
+            "prefill": "meal plan app"
+        },
+        "countries": {
+            "title": "Countries (ISO)",
+            "type": "array",
+            "description": "Reachable countries (e.g. DE, FR, GB, US). EU countries return ALL ads (DSA); others return political/issue ads only.",
+            "editor": "stringList",
+            "prefill": ["DE"]
+        },
+        "adActiveStatus": {
+            "title": "Ad status",
+            "type": "string",
+            "description": "Which ads to include.",
+            "enum": ["ALL", "ACTIVE", "INACTIVE"],
+            "default": "ACTIVE"
+        },
+        "maxResults": {
+            "title": "Max ads",
+            "type": "integer",
+            "description": "Maximum ads to return (paginated).",
+            "default": 50,
+            "minimum": 1,
+            "maximum": 1000
+        }
+    },
+    "required": ["searchTerms"]
+}

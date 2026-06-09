@@ -1,0 +1,43 @@
+{
+    "title": "SERP Search Scout input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "queries": {
+            "title": "Queries",
+            "type": "array",
+            "description": "Search queries (e.g. 'best invoicing app for freelancers').",
+            "editor": "stringList",
+            "prefill": ["best habit tracker app"]
+        },
+        "engine": {
+            "title": "Search engine",
+            "type": "string",
+            "description": "duckduckgo = reliable, no proxy needed. google = needs residential proxy, may be blocked.",
+            "enum": ["duckduckgo", "google"],
+            "default": "duckduckgo"
+        },
+        "maxResults": {
+            "title": "Max results per query",
+            "type": "integer",
+            "description": "Maximum organic results to return per query.",
+            "default": 20,
+            "minimum": 1,
+            "maximum": 100
+        },
+        "region": {
+            "title": "Region/locale",
+            "type": "string",
+            "description": "e.g. 'us-en', 'de-de', 'fr-fr' (DuckDuckGo) or country for Google.",
+            "editor": "textfield",
+            "default": "us-en"
+        },
+        "useProxy": {
+            "title": "Use Apify Proxy (residential)",
+            "type": "boolean",
+            "description": "Required for Google; recommended at volume. Uses residential credit.",
+            "default": false
+        }
+    },
+    "required": ["queries"]
+}

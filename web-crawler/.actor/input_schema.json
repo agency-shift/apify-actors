@@ -1,0 +1,42 @@
+{
+    "title": "Web Content Crawler input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "startUrls": {
+            "title": "Start URLs",
+            "type": "array",
+            "description": "Pages to crawl. Each item is a URL string.",
+            "editor": "stringList",
+            "prefill": ["https://news.ycombinator.com"]
+        },
+        "maxPages": {
+            "title": "Max pages",
+            "type": "integer",
+            "description": "Maximum pages to crawl in total.",
+            "default": 10,
+            "minimum": 1,
+            "maximum": 1000
+        },
+        "followLinks": {
+            "title": "Follow same-domain links",
+            "type": "boolean",
+            "description": "If on, enqueue links on the same domain up to maxPages.",
+            "default": false
+        },
+        "maxTextLength": {
+            "title": "Max text length per page",
+            "type": "integer",
+            "description": "Truncate extracted page text to this many characters.",
+            "default": 20000,
+            "minimum": 500
+        },
+        "useProxy": {
+            "title": "Use Apify Proxy",
+            "type": "boolean",
+            "description": "Route requests through Apify Proxy (datacenter). Uses credit. Helps with IP blocks.",
+            "default": false
+        }
+    },
+    "required": ["startUrls"]
+}

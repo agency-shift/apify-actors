@@ -1,0 +1,10 @@
+{
+    "name": "serp-search-scout",
+    "version": "0.0.1",
+    "type": "module",
+    "description": "Extract organic search results from DuckDuckGo or Google.",
+    "engines": { "node": ">=18" },
+    "dependencies": { "apify": "^3.2.6", "cheerio": "^1.0.0", "undici": "^6.19.8" },
+    "scripts": { "start": "node src/main.js" },
+    "license": "ISC"
+}

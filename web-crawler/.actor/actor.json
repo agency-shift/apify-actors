@@ -1,0 +1,11 @@
+{
+    "actorSpecification": 1,
+    "name": "web-content-crawler",
+    "title": "Web Content Crawler — Generic Site Text Extractor",
+    "description": "Crawl any site and extract clean title, text, meta and links. Fast Cheerio crawler with optional same-domain following. For competitor/content research.",
+    "version": "0.0",
+    "buildTag": "latest",
+    "meta": { "templateId": "js-empty" },
+    "input": "./input_schema.json",
+    "dockerfile": "./Dockerfile"
+}

@@ -1,0 +1,35 @@
+{
+    "actorSpecification": 1,
+    "views": {
+        "overview": {
+            "title": "Launches",
+            "transformation": {
+                "fields": [
+                    "title",
+                    "url",
+                    "points",
+                    "numComments",
+                    "tractionScore",
+                    "ageHours",
+                    "author",
+                    "hnUrl",
+                    "createdAt"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "title": { "label": "Launch" },
+                    "url": { "label": "Product URL" },
+                    "points": { "label": "Points" },
+                    "numComments": { "label": "Comments" },
+                    "tractionScore": { "label": "Traction" },
+                    "ageHours": { "label": "Age (h)" },
+                    "author": { "label": "Author" },
+                    "hnUrl": { "label": "HN thread" },
+                    "createdAt": { "label": "Posted" }
+                }
+            }
+        }
+    }
+}

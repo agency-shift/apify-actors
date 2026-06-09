@@ -1,0 +1,80 @@
+{
+    "title": "App Store Localization Gaps input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "mode": {
+            "title": "Operation mode",
+            "type": "string",
+            "description": "search = find apps by niche; lookup = details for given app IDs; reviews = pull country reviews.",
+            "enum": ["search", "lookup", "reviews"],
+            "enumTitles": ["Search by niche", "Lookup by App ID", "Reviews by App ID"],
+            "default": "search"
+        },
+        "searchTerm": {
+            "title": "Search keyword",
+            "type": "string",
+            "description": "Niche to research (e.g. 'habit tracker', 'meditation'). Used in search mode.",
+            "editor": "textfield",
+            "prefill": "habit tracker"
+        },
+        "country": {
+            "title": "Source App Store country",
+            "type": "string",
+            "description": "ISO country of the source store (us, gb, ...). Leave 'us' to find US winners.",
+            "editor": "textfield",
+            "default": "us",
+            "prefill": "us"
+        },
+        "maxResults": {
+            "title": "Max apps",
+            "type": "integer",
+            "description": "Max apps to return in search mode (max 200).",
+            "default": 50,
+            "maximum": 200,
+            "minimum": 1
+        },
+        "appIds": {
+            "title": "App IDs",
+            "type": "array",
+            "description": "iTunes app IDs for lookup/reviews mode (e.g. '337472899').",
+            "editor": "stringList",
+            "default": []
+        },
+        "checkLanguage": {
+            "title": "Language gap to flag",
+            "type": "string",
+            "description": "ISO language to check (de, fr, es, it). Apps NOT supporting it are flagged missingLanguage=true.",
+            "editor": "textfield",
+            "prefill": "de"
+        },
+        "includeReviews": {
+            "title": "Auto-extract reviews in search",
+            "type": "boolean",
+            "description": "Also pull reviews for each app found (slower).",
+            "default": false
+        },
+        "reviewCountry": {
+            "title": "Reviews country override",
+            "type": "string",
+            "description": "Country to fetch reviews from (e.g. search US apps, read DE reviews). Defaults to checkLanguage's market.",
+            "editor": "textfield"
+        },
+        "reviewPages": {
+            "title": "Review pages",
+            "type": "integer",
+            "description": "Pages of reviews per app (1 page ~50 reviews, max 10).",
+            "default": 3,
+            "maximum": 10,
+            "minimum": 1
+        },
+        "filterKeywords": {
+            "title": "Filter reviews by keywords",
+            "type": "array",
+            "description": "Only keep reviews containing these words (e.g. 'translate','german','language').",
+            "editor": "stringList",
+            "default": []
+        }
+    },
+    "required": ["mode"]
+}

@@ -1,0 +1,10 @@
+{
+    "name": "meta-ad-library-scout",
+    "version": "0.0.1",
+    "type": "module",
+    "description": "Query the official Meta Ad Library (Graph API ads_archive).",
+    "engines": { "node": ">=18" },
+    "dependencies": { "apify": "^3.2.6" },
+    "scripts": { "start": "node src/main.js" },
+    "license": "ISC"
+}

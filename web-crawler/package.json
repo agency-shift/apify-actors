@@ -1,0 +1,13 @@
+{
+    "name": "web-content-crawler",
+    "version": "0.0.1",
+    "type": "module",
+    "description": "Crawl any site and extract clean title, text, meta and links.",
+    "engines": { "node": ">=18" },
+    "dependencies": {
+        "apify": "^3.2.6",
+        "crawlee": "^3.11.5"
+    },
+    "scripts": { "start": "node src/main.js" },
+    "license": "ISC"
+}

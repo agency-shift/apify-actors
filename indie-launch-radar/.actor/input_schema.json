@@ -1,0 +1,46 @@
+{
+    "title": "Indie Launch Radar input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "daysBack": {
+            "title": "Days back",
+            "type": "integer",
+            "description": "How many days of Show HN launches to scan (1-30).",
+            "default": 7,
+            "minimum": 1,
+            "maximum": 30,
+            "unit": "days"
+        },
+        "minPoints": {
+            "title": "Minimum points",
+            "type": "integer",
+            "description": "Discard launches below this many HN points.",
+            "default": 20,
+            "minimum": 0
+        },
+        "minComments": {
+            "title": "Minimum comments",
+            "type": "integer",
+            "description": "Discard launches below this many comments.",
+            "default": 3,
+            "minimum": 0
+        },
+        "keywords": {
+            "title": "Keyword filter (optional)",
+            "type": "array",
+            "description": "Only keep launches whose title matches at least one keyword (case-insensitive). Leave empty for all.",
+            "editor": "stringList",
+            "default": []
+        },
+        "maxResults": {
+            "title": "Max results",
+            "type": "integer",
+            "description": "Cap the number of launches returned.",
+            "default": 100,
+            "minimum": 1,
+            "maximum": 1000
+        }
+    },
+    "required": []
+}

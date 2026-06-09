@@ -1,0 +1,11 @@
+{
+    "actorSpecification": 1,
+    "name": "linkedin-post-search-scout",
+    "title": "LinkedIn Post Search Scout — B2B Pain Signals (cookie)",
+    "description": "Search LinkedIn posts for B2B pain/WTP signals using your own li_at session cookie. WARNING: against LinkedIn ToS, risks account restriction, and processes personal data (GDPR). Use your own account at your own risk.",
+    "version": "0.0",
+    "buildTag": "latest",
+    "meta": { "templateId": "js-empty" },
+    "input": "./input_schema.json",
+    "dockerfile": "./Dockerfile"
+}

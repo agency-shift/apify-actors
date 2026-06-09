@@ -1,0 +1,11 @@
+{
+    "actorSpecification": 1,
+    "name": "tiktok-scout",
+    "title": "TikTok Scout — Hashtag & Profile Signals",
+    "description": "Scrape TikTok hashtag or profile videos (caption, plays, likes, comments, url) via headless browser + residential proxy. Anti-bot is real; residential proxy required.",
+    "version": "0.0",
+    "buildTag": "latest",
+    "meta": { "templateId": "js-empty" },
+    "input": "./input_schema.json",
+    "dockerfile": "./Dockerfile"
+}

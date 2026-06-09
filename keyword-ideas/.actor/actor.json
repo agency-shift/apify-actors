@@ -1,0 +1,11 @@
+{
+    "actorSpecification": 1,
+    "name": "keyword-ideas-scout",
+    "title": "Keyword Ideas Scout — Autocomplete Expansion",
+    "description": "Expand a seed keyword into hundreds of real Google Autocomplete suggestions (a-z, questions, prepositions). Free demand-discovery. NOTE: gives keyword IDEAS, not absolute search volume.",
+    "version": "0.0",
+    "buildTag": "latest",
+    "meta": { "templateId": "js-empty" },
+    "input": "./input_schema.json",
+    "dockerfile": "./Dockerfile"
+}

@@ -1,0 +1,10 @@
+{
+    "name": "youtube-search-scout",
+    "version": "0.0.1",
+    "type": "module",
+    "description": "Search YouTube and extract video metadata via ytInitialData.",
+    "engines": { "node": ">=18" },
+    "dependencies": { "apify": "^3.2.6", "undici": "^6.19.8" },
+    "scripts": { "start": "node src/main.js" },
+    "license": "ISC"
+}

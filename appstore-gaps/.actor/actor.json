@@ -1,0 +1,11 @@
+{
+    "actorSpecification": 1,
+    "name": "appstore-localization-gaps",
+    "title": "App Store Localization Gaps — Geo-Arbitrage Finder",
+    "description": "Find strong US App Store apps missing DE/FR/ES/IT localization, plus country reviews requesting translation. Validates geo-arbitrage before you build. iTunes public APIs, no proxy.",
+    "version": "0.0",
+    "buildTag": "latest",
+    "meta": { "templateId": "js-empty" },
+    "input": "./input_schema.json",
+    "dockerfile": "./Dockerfile"
+}
